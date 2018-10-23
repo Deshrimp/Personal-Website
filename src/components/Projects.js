@@ -6,8 +6,8 @@ class Projects extends React.PureComponent {
     const {
       props: { projects }
     } = this
-    return projects.map(({ image, title }) => (
-      <div className="col-4 p-3">
+    return projects.map(({ image, title }, index) => (
+      <div className="col-4 p-3" key={title + index}>
         <Project image={image} title={title} />
       </div>
     ))

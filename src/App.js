@@ -1,64 +1,138 @@
 import React from "react"
-import styled from "styled-components"
 import "bootstrap-css-only"
 import "./style.css"
-import { Container, Row, Col } from "reactstrap"
+
+import Typing from "react-typing-animation"
 
 import { Header } from "./components/Header"
+import Contact from "./components/Contact"
+
 import MainImage from "./images/julio-grimaldo-matte.png"
 import { Projects } from "./components/Projects"
 import projects from "./data/projects"
-
-const ThirdPink = styled.a`
-  color: #d9c0c0;
-`
+import devprojects from "./data/Web/development"
+import designprojects from "./data/Web/design"
+import makeupprojects from "./data/Art/makeup"
+import animationprojects from "./data/Art/animation"
+import vfxprojects from "./data/Art/vfx"
 
 class App extends React.PureComponent {
+  state = { currentWeb: "design", currentArt: "animation" }
+
+  changeCurrentProject = event => {
+    const { name, value } = event.currentTarget
+    const nextState = { [name]: value }
+    this.setState(nextState)
+  }
+
   render() {
+    const {
+      state: { currentWeb, currentArt },
+      changeCurrentProject
+    } = this
+    const webProjects = currentWeb === "dev" ? devprojects : designprojects
+    const artProjects =
+      currentArt === "animation"
+        ? animationprojects
+        : currentArt === "vfx"
+          ? vfxprojects
+          : makeupprojects
+    const str1 = "Web Development Projects"
+    const str2 = "Animation Projects"
     return (
-      <div>
+      <>
         <div id="home">
           <img id="MainImage" src={MainImage} alt="MattePainting" />
           <Header />
           <div id="Banner">
-            <div id="bannertext">Explore Web Development Projects</div>
-          </div>
-        </div>
-        <div id="WebDevelopment">
-          <div id="title">Web Development</div>
-          <div className="container" id="webProjects">
-            <div className="row">
-              <div className="col">
-                <a href="#" className="submenu">
-                  Web Design
-                </a>
-              </div>
-              <div className="col">
-                <a href="#" className="submenu">
-                  Web Development
-                </a>
-              </div>
-            </div>
-            <div className="row">
-              <Projects projects={projects} />
+            <div id="bannertext">
+              Explore
+              <Typing loop>
+                <a href="#WebDevelopment">{str1}</a>
+                <Typing.Delay ms={2000} />
+                <Typing.Backspace count={str1.length} />
+                <a href="#Art">{str2} </a>
+                <Typing.Delay ms={2000} />
+                <Typing.Backspace count={str2.length} />
+              </Typing>
             </div>
           </div>
         </div>
-        <div id="Art">
-          <div id="title">Art</div>
-          <div className="container">
-            <a href="#" class="submenu">
-              Matte Painting
-            </a>
-            <a href="#" class="submenu">
-              Animation
-            </a>
-            <a href="#" class="submenu">
-              3D
-            </a>
-          </div>
+        <div id="WebDevelopment" className="title">
+          Web Development
         </div>
-      </div>
+        <div className="container" id="webProjects">
+          <div className="row">
+            <div className="col">
+              <button
+                name="currentWeb"
+                value="design"
+                onClick={changeCurrentProject}
+                className="submenu"
+              >
+                Web Design
+              </button>
+            </div>
+            <div className="col">
+              <button
+                name="currentWeb"
+                value="dev"
+                onClick={changeCurrentProject}
+                className="submenu"
+              >
+                Web Development
+              </button>
+            </div>
+          </div>
+          <div className="row">
+            <Projects projects={webProjects} />
+          </div>
+          <div className="row">
+            <div className="col">
+              <div id="Art" className="title">
+                Art
+              </div>
+
+              <div className="row">
+                <div className="col">
+                  <button
+                    onClick={changeCurrentProject}
+                    name="currentArt"
+                    value="vfx"
+                    className="submenu"
+                  >
+                    VFX
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    name="currentArt"
+                    value="animation"
+                    className="submenu"
+                    onClick={changeCurrentProject}
+                  >
+                    Animation
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    onClick={changeCurrentProject}
+                    name="currentArt"
+                    value="makeup"
+                    className="submenu"
+                  >
+                    FX Makeup
+                  </button>
+                </div>
+              </div>
+              <div className="row">
+                <Projects projects={artProjects} />
+              </div>
+            </div>
+          </div>
+          <Contact />
+        </div>
+      </>
     )
   }
 }

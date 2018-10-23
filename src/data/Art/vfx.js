@@ -1,4 +1,4 @@
-import PS1 from "../images/PS1.png"
+import PS1 from "../../images/PS1.png"
 
 const projects = [
   { image: PS1, title: "Punto Seguro" },
