@@ -48,10 +48,14 @@ class App extends React.PureComponent {
             <div id="bannertext">
               Explore
               <Typing loop>
-                <a href="#WebDevelopment">{str1}</a>
+                <a className="typingText" href="#WebDevelopment">
+                  {str1}
+                </a>
                 <Typing.Delay ms={2000} />
                 <Typing.Backspace count={str1.length} />
-                <a href="#Art">{str2} </a>
+                <a className="typingText" href="#Art">
+                  {str2}{" "}
+                </a>
                 <Typing.Delay ms={2000} />
                 <Typing.Backspace count={str2.length} />
               </Typing>

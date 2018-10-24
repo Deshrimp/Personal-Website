@@ -1,11 +1,13 @@
-import PS1 from "../../images/PS1.png"
+import PGC1 from "../../images/PGC1.png"
+import F1 from "../../images/Foundation1.png"
+import MyWeb from "../../images/MyWeb.png"
+import M1 from "../../images/Michael1.png"
 
 const projects = [
-  { image: PS1, title: "Punto Seguro design" },
-  { image: PS1, title: "This Website!" },
-  { image: PS1, title: "Sample Project" },
-  { image: PS1, title: "Sample Project" },
-  { image: PS1, title: "Sample Project" }
+  { image: PGC1, title: "Prairie Glade Chihuahuas" },
+  { image: F1, title: "Label Print Program" },
+  { image: MyWeb, title: "This Website!" },
+  { image: M1, title: "Software Dev Personal Website" }
 ]
 
 export default projects
