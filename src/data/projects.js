@@ -7,3 +7,5 @@ const projects = [
 ]
 
 export default projects
+//yarn build, compiles from es6 to an older version of javascript
+//yarn deploy,

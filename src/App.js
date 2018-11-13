@@ -7,7 +7,7 @@ import Typing from "react-typing-animation"
 import { Header } from "./components/Header"
 import Contact from "./components/Contact"
 
-import MainImage from "./images/julio-grimaldo-matte.png"
+import MainImage from "./images/black.jpg"
 import { Projects } from "./components/Projects"
 import projects from "./data/projects"
 import devprojects from "./data/Web/development"
@@ -35,8 +35,8 @@ class App extends React.PureComponent {
       currentArt === "animation"
         ? animationprojects
         : currentArt === "vfx"
-          ? vfxprojects
-          : makeupprojects
+        ? vfxprojects
+        : makeupprojects
     const str1 = "Web Development Projects"
     const str2 = "Animation Projects"
     return (
