@@ -1,7 +1,7 @@
 {
   "main.css": "/Personal-Website/static/css/main.b6af6ff7.chunk.css",
-  "main.js": "/Personal-Website/static/js/main.7dbeee9b.chunk.js",
-  "main.js.map": "/Personal-Website/static/js/main.7dbeee9b.chunk.js.map",
+  "main.js": "/Personal-Website/static/js/main.287d5b21.chunk.js",
+  "main.js.map": "/Personal-Website/static/js/main.287d5b21.chunk.js.map",
   "static/css/1.c5753027.chunk.css": "/Personal-Website/static/css/1.c5753027.chunk.css",
   "static/js/1.d0056f9e.chunk.js": "/Personal-Website/static/js/1.d0056f9e.chunk.js",
   "static/js/1.d0056f9e.chunk.js.map": "/Personal-Website/static/js/1.d0056f9e.chunk.js.map",
@@ -10,7 +10,7 @@
   "static/media/PS1.png": "/Personal-Website/static/media/PS1.a057f2b4.png",
   "static/media/LogoTec.png": "/Personal-Website/static/media/LogoTec.895b1825.png",
   "static/media/LogoCoco.png": "/Personal-Website/static/media/LogoCoco.0a8e8a93.png",
-  "static/media/julio-grimaldo-matte.png": "/Personal-Website/static/media/julio-grimaldo-matte.5feed8e2.png",
+  "static/media/black.jpg": "/Personal-Website/static/media/black.bffcbf48.jpg",
   "static/media/Liri1.png": "/Personal-Website/static/media/Liri1.5f8af934.png",
   "static/media/PGC1.png": "/Personal-Website/static/media/PGC1.a0ced59d.png",
   "static/media/Foundation1.png": "/Personal-Website/static/media/Foundation1.6129c9b0.png",
@@ -21,6 +21,6 @@
   "static/css/main.b6af6ff7.chunk.css.map": "/Personal-Website/static/css/main.b6af6ff7.chunk.css.map",
   "static/css/1.c5753027.chunk.css.map": "/Personal-Website/static/css/1.c5753027.chunk.css.map",
   "index.html": "/Personal-Website/index.html",
-  "precache-manifest.af02ee09df7ce652d57bc800467859fd.js": "/Personal-Website/precache-manifest.af02ee09df7ce652d57bc800467859fd.js",
+  "precache-manifest.2ae5297fdb40fba37c580512ea8e4433.js": "/Personal-Website/precache-manifest.2ae5297fdb40fba37c580512ea8e4433.js",
   "service-worker.js": "/Personal-Website/service-worker.js"
 }

@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Personal-Website/static/media/LogoCoco.0a8e8a93.png"
   },
   {
-    "revision": "7dbeee9bca85690eb9f6",
+    "revision": "287d5b218d1675f4da50",
     "url": "/Personal-Website/static/css/main.b6af6ff7.chunk.css"
   },
   {
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/Personal-Website/static/media/LogoTec.895b1825.png"
   },
   {
-    "revision": "7dbeee9bca85690eb9f6",
-    "url": "/Personal-Website/static/js/main.7dbeee9b.chunk.js"
+    "revision": "287d5b218d1675f4da50",
+    "url": "/Personal-Website/static/js/main.287d5b21.chunk.js"
   },
   {
-    "revision": "5feed8e244113a89a83429679689144c",
-    "url": "/Personal-Website/static/media/julio-grimaldo-matte.5feed8e2.png"
+    "revision": "bffcbf48e00d91bd61a3758ae8b1dbaa",
+    "url": "/Personal-Website/static/media/black.bffcbf48.jpg"
   },
   {
     "revision": "5f8af9341c51599a6aeb585de2722c64",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/Personal-Website/static/css/1.c5753027.chunk.css"
   },
   {
-    "revision": "89fe9cd285ac15a5e9fe45effdf783a6",
+    "revision": "981bd6841123a45c62587de66483d313",
     "url": "/Personal-Website/index.html"
   }
 ];
