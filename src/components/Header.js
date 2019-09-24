@@ -10,12 +10,13 @@ const FixedNavbar = styled(Navbar)`
   width: 100%;
   top: 0;
   border-bottom: 3px solid #d9c0c0;
+  
 `
 
 class Header extends React.PureComponent {
   render() {
     return (
-      <FixedNavbar className="topnav" expand="sm">
+      <FixedNavbar id="navbar" className="topnav" /* expand="lg" */>
         <div className="container">
           <NavbarBrand>Jessica Yanez</NavbarBrand>
           <Nav className="ml-auto topnav" tag="div" navbar fill>

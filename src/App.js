@@ -37,14 +37,14 @@ class App extends React.PureComponent {
         : currentArt === "vfx"
         ? vfxprojects
         : makeupprojects
-    const str1 = "Web Development Projects"
-    const str2 = "Animation Projects"
+    // const str1 = "Web Development Projects"
+    // const str2 = "Animation Projects"
     return (
       <>
         <div id="home">
-          <img id="MainImage" src={MainImage} alt="MattePainting" />
+          {/* <img id="MainImage" src={MainImage} alt="MattePainting" /> */}
           <Header />
-          <div id="Banner">
+          {/* <div id="Banner">
             <div id="bannertext">
               Explore
               <Typing loop>
@@ -60,7 +60,7 @@ class App extends React.PureComponent {
                 <Typing.Backspace count={str2.length} />
               </Typing>
             </div>
-          </div>
+          </div> */}
         </div>
         <div id="WebDevelopment" className="title">
           Web Development
